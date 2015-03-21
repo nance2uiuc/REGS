@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Notation}{3}
+\contentsline {section}{\numberline {2}Billiard system on the surface of constant curvature}{3}
+\contentsline {subsection}{\numberline {2.1}Jacobi fields}{3}
+\contentsline {subsection}{\numberline {2.2}Collision and reflection matrices}{4}
+\contentsline {section}{\numberline {3}Billiard on hyperbolic plane}{5}
+\contentsline {subsection}{\numberline {3.1}Collision and reflection matrices in hyperbolic billiards}{5}
+\contentsline {subsection}{\numberline {3.2}The main result for the hyperbolic case}{5}
+\contentsline {section}{\numberline {4}Spherical billiard}{7}
+\contentsline {subsection}{\numberline {4.1}Collision and reflection matrices in spherical billiards}{7}
+\contentsline {subsection}{\numberline {4.2}Special case}{7}
+\contentsline {section}{\numberline {5}Conclusions}{8}
+\contentsline {section}{\numberline {6}Acknowledgements}{8}

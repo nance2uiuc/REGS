@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, graphicx}
+\setlength{\parindent}{0pt}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{example}[theorem]{Example}
+
+\begin{document}
+\title{On the positive measure of sets of three-period orbits in various billiard geometries}
+\author{Eunice Kim, Victoria Blumen, Joe Nance, Vadim Zharnitsky, and Natawat K.}
+\maketitle
+
+\begin{abstract}
+In the spirit of Wojtkowski's paper, we present proofs that there are no open sets of three-period orbits in hyperbolic or spherical billiards. Rather than using variational methods as is standard for these types of billiards problems, our approach is differential geometric, using Jacobi fields to analyze two-parameter families of nearby orbits.
+\end{abstract}
+\tableofcontents
+\section{Introduction}
+This article provides a unified approach to study open sets of 3-period orbits in billiards on manifolds with constant curvature. Specifically, Euclidean, spherical and hyperbolic have been treated. Although Euclidean and spherical have been treated previously, we offer new results on the hyperbolic case. Open sets, or rather sets of positive measure, of periodic orbits is important in spectral asymptotics for the corresponding eigenvalue problem. Understanding the structure of periodic orbits in non-Euclidean geometries might also help our understanding of the planar case.
+
+The billiard system on a two dimensional Riemannian manifold $(M,g)$ consists of the boundary $\partial Q$ and
+a mass point moving along the geodesics inside the domain. Whenever the mass hits the boundary, it reflects
+according to the Fermat's principle so as to extremize the path length, which in turn leads to the familiar law:
+the angle of incidence  is equal to the angle of reflection. Even more general formulation is possible in the
+framework  of Finsler geometry, see \cite{tabachnikov}.
+
+Periodic orbits is a natural object of study in dynamical systems and one important question concerns
+the presence of ``large'' sets (of positive measure) of periodic orbits in the billiard ball problem. Informally speaking,
+it corresponds to the probability that a given orbit is periodic.
+This question has been originally motivated by the spectral geometry problem. It turns out that the second term
+of the so-called Weyl asymptotics for, say, the Dirichlet problem in a bounded domain has a particularly simple
+ form if periodic orbits the associated billiard problem has zero measure \cite{ivrii}. There is a natural invariant
+ measure for the billiard map which can be defined as follows:
+let $s$ be an arclength parameter coordinatizing the boundary and let
+$\phi \in [0,\pi]$ be the angle of the outcoming ray from the boundary measured in the counterclockwise direction.
+
+The billiard ball map $T: [\partial Q\times [0,\pi]] \rightarrow Q\times [0,\pi]]$ which takes one outcoming ray to
+another one obtained after reflection from the boundary, preserves the measure $\mu = \sin \phi\, d\phi \, ds$, see e.g.
+\cite{birkhoff}.
+
+Regarding motivations, we finally mention that understanding the structure of periodic orbits in non-Euclidean geometries
+might also help our understanding of the planar case. It is also likely that spectral geometry in non-Euclidean
+geometries would also require understanding the structure of the the sets of periodic orbits.
+
+
+For the planar (classical) billiard problem, it is easy to see that two period orbits have zero measure,
+since they must be normal to the boundary at both ends. Similarly, this is the case for a billiard on ${\mathbb H^2}$.
+On the other hand, a billiard on $S^2$ with boundary given by equator has two-period orbits of positive (in fact, full)
+measure. This has to do with the presence of conjugated points on $S^2$.
+
+For the period 3, this problem already becomes non-trivial. First result on zero measure of 3-periodic orbit was
+obtained by Rychlik in \cite{rychlik}, using symbolic calculations, which were later removed in \cite{stojanov}.
+ Using Jacobi fields, Wojtkovski provided an elegant simple proof of Rychlik's theorem. Subsequently, there have been
+extensions to other types of billiard systems: higher dimensional (\cite{vorobetz}),
+outer billiards (\cite{genin,tumanov}), and spherical (\cite{ymb}).
+
+The purpose of this article is twofold: first we prove:
+
+\begin{theorem}
+The set of 3-period orbits in any billiard on ${\mathbb H^2}$ has zero measure.
+\end{theorem}
+
+Secondly, we present the unified proof (following Wojtkovski) based on the Jacobi fields,
+which treats all 3 billiard systems on the constant curvature manifolds in the same manner.
+Our argument proceeds independently of the underlying geometry until we get the compatibility
+condition. Then, using the relevant cosine formula (which depends on the geometry), we obtain
+the relation that must be satisfied at an open set containing only 3-period orbits
+\[
+k(s_0) =  \sin^3 (\phi_0)F(L),
+\]
+where $k(s_0)$ is curvature at one of the vertices and $\phi_0$ is the angle of the billiard orbit with tangent at this vertex.
+The function $F(L)$ depends on the underlying Riemannian manifold
+\[
+ F(L) =
+  \begin{cases}
+   \frac{2}{L} & \text{if }  {\mathbb E^2} \\
+   \coth(L/2)    & \text{if } {\mathbb H^2}  \\
+   \cot(L/2)    & \text{if }  {\mathbb S^2}.
+  \end{cases}
+\]
+
+From this formula, it is relatively straightforward to understand the how large can be the sets of 3-period orbits.
+
+\subsection{Definitions}
+\begin{definition}
+  Jacobi field
+\end{definition}
+
+\begin{definition}
+The Billiard map and phase space
+\end{definition}
+
+\begin{definition}
+Hyperbolic half-plane
+\end{definition}
+
+\section{The Euclidean case}
+\subsection{Euclidean Jacobi fields}
+\subsection{Collision and reflection matrices in Euclidean billiards}
+\subsection{The main result for the Euclidean case}
+
+
+\section{The hyperbolic case}
+\begin{centering}
+    \includegraphics[width=.5\textwidth]{hyperbolic.jpg}
+ \end{centering}
+
+\subsection{Hyperbolic Jacobi fields}
+\subsection{Collision and reflection matrices in hyperbolic billiards}
+\subsection{The main result for the hyperbolic case}
+\begin{definition}
+\textit{The following relation holds when $\gamma$ is the angle subtending from two adjacent segments of an orbit and $\phi$ is the angle of incidence (reflection): $\sin(\phi)=\sin(\frac{\pi-\gamma}{2})=\cos(\frac{\gamma}{2})$.
+The length of an orbit is given by $L:=x+y+x$.}
+\end{definition}
+The collision and reflection matrices describing evolution of an orbit are given respectively as
+\begin{equation*}
+C(x)=\left(\begin{array}{cc}
+\cosh(x) & \sinh(x) \\
+\sinh(x) & \cosh(x) \end{array}\right)
+\mbox{ and }
+R(x)=\left(\begin{array}{cc}
+-1 & 0 \\
+\frac{2k_0}{\sin(\phi)} & -1 \end{array}\right).
+\end{equation*}
+Now a single orbit can be realized as the product of six matrices,
+\begin{equation*}
+C(x)R(x)C(z)\left(\begin{array}{c}
+0 \\
+1\end{array}\right)=R^{-1}(y)C^{-1}(y)R^{-1}(z)\left(\begin{array}{c}
+0 \\
+1\end{array}\right).
+\end{equation*}
+
+Equating components of the resulting vectors, we have
+
+\begin{equation*}
+  \sinh(x+z)-\sinh(y)=\frac{2k_0\sinh(x)\sinh(z)}{\sin(\phi)}
+\end{equation*}
+
+\begin{equation*}
+\cosh(y)=\cosh(x)\cosh(z)-\sinh(x)\sinh(z)\cos(\gamma)
+\end{equation*}
+
+Simplify using the hyperbolic cosine angle addition formula to get
+
+\begin{equation*}
+\cosh(y)=\cosh(x+z)-\sinh(x)\sinh(z)-\sinh(x)\sinh(z)\cos(\gamma).
+\end{equation*}
+Factoring, we arrive at
+\begin{equation*}
+\cosh(x+z)-\cosh(y)=2 \cos^2(\frac{\gamma}{2})\sinh(x)\sinh(z)
+\end{equation*}
+Combining the results above,
+\begin{equation*}
+\frac{\cosh(x+z)-\cosh(y)}{\cos^2(\frac{\gamma}{2})}=2\sinh(x)\sinh(z)=\frac{\sinh(x+z)-\sinh(y)\cos(\frac{\gamma}{2})}{k_0}.
+\end{equation*}
+Therefore,
+\begin{equation*}
+k_0=\frac{\sinh(x+z)-\sinh(y)}{\cosh(x+z)-\cosh(y)}\cos^3(\frac{\gamma}{2})
+\end{equation*}
+Exploiting identities for $\sinh(A)-\sinh(B)$ and $\cosh(A)-\cosh(B)$, we can conclude that
+
+\begin{equation*}\begin{split}
+k_0&=\frac{\sinh(L-y)-\sinh(y)}{\cosh(L-y)-\cosh(y)}\cos^3(\frac{\gamma}{2}) \\
+&=\frac{2\cosh(L/2)\sinh(L/2-y)}{2\sinh(L/2)\sinh(L/2-y)}\cos^3(\frac{\gamma}{2}) \\
+&=\cos^3(\frac{\gamma}{2})\cdot\mbox{ constant}\end{split}
+\end{equation*}
+
+
+\section{The spherical case}
+\begin{centering}
+    \includegraphics[width=.5\textwidth]{spherical.jpg}
+ \end{centering}
+
+\subsection{Spherical Jacobi fields}
+\subsection{Collision and reflection matrices in spherical billiards}
+\subsection{The main result for the spherical case}
+Equating the components of the resulting vectors,
+
+
+\begin{equation*}
+\frac{2k_0\sin(x)\sin(z)}{\sin(\phi)}=\sin(x)\cos(z)+\cos(x)\sin(z)-\sin(y).
+\end{equation*}
+
+Using the sine and cosine angle addition formulae,
+
+
+\begin{equation*}
+\frac{2k_0\sin(x)\sin(z)}{\sin(\phi)}=\sin(x+z)-\sin(y).
+\end{equation*}
+The fact that
+\begin{equation*}
+\cos(y)=\cos(x)\cos(z)+\sin(x)\sin(z)\cos(\gamma)
+\end{equation*}
+allows us to write
+
+\begin{equation*}\begin{split}
+\cos(x+z)-\cos(y)&=-(\sin(x)\sin(z)+\sin(x)\sin(z)\cos(\gamma)) \\
+&=-(1+\cos(\gamma))\sin(x)\sin(z).
+\end{split}
+\end{equation*}
+Using the cosine half-angle identity,
+
+\begin{equation*}
+\cos(x+z)-\cos(y)=-2\cos^2(\frac{\gamma}{2})\sin(x)\sin(z)
+\end{equation*}
+can be written as
+
+\begin{equation*}
+\frac{k_0}{\cos(\frac{\gamma}{2})}\left(\frac{-\cos(x+z)-\cos(y)}{\cos^2(\frac{\gamma}{2})} \right)=\sin(x+z)-\sin(y).
+\end{equation*}
+Therefore,
+
+\begin{equation*}
+k_0=-\left( \frac{\sin(x+z)-\sin(y)}{\cos(x+z)-\cos(y)}\right)\cos^3(\frac{\gamma}{2}).
+\end{equation*}
+Exploiting identities for $\sin(A)\pm \sin(B)$ and $\cos(A)\pm\cos(B)$, we can write
+\begin{equation*}
+k_0=-\cos^3(\frac{\gamma}{2})\left(\frac{2\cos(\frac{x+y+z}{2})\sin(\frac{x+z-y}{2})}{-2\sin(\frac{x+y+z}{2})\sin(\frac{x+z-y}{2})} \right).
+\end{equation*}
+
+Therefore,
+
+\begin{equation*}
+k_0=\cos^3(\frac{\gamma}{2})\cdot \mbox{constant}
+\end{equation*}
+
+
+
+\end{document} 
